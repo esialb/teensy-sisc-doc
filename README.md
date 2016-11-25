@@ -6,7 +6,7 @@ SISC as implemented on Teensy has a 16-bit address space with 16-bit words.
 
 Word bits are `0` through `15` inclusive, where bit `15` is the most-significant bit.
 
-Bit `15` is the sign bit, using twos-complement binary representation.
+Negative numbers are not represented; all words are positive.  However, for purposes of subtraction, negatives are represented as if they were the bottom 16 bits of a twos-complement integer.
 
 Instruction format:
 
