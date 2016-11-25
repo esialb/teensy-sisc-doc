@@ -29,7 +29,7 @@ SBN A, B
 
 No registers are directly available to programs, however `PC` is memory-mapped to address `0xFFFF`.
 
-All devices, including I/O devices, are memory-mapped to the negative address space.
+All devices, including I/O devices, are memory-mapped.
 
 ## Examples
 
