@@ -36,6 +36,7 @@ All devices, including I/O devices, are memory-mapped to the negative address sp
 ### Dereferencing a pointer
 
 ```
+# Mem[dst_addr] = Mem[Mem[ptr_addr]]
 .macro-begin DEREFENCE(ptr_addr, dst_addr) {
 	.code
 	## set deref2 to -ptr_addr
