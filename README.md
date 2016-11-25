@@ -1,6 +1,6 @@
 # Single-Instruction-Set Computer VM
 
-The Single-Instruction-Set Computer (**SISC**) is a CPU and associated Von Neuman architecture that has only has only a single instruction: Subtract and Branch if Negative (**SBN**).
+The Single-Instruction-Set Computer (**SISC**) is a CPU and associated Von Neuman architecture that has only has only a single instruction: Subtract and Branch if Negative (**SBN**). SISC is a turing-complete architecture, although it relies heavily on self-modifying code to achieve common operations such as dereferencing a pointer.
 
 SISC as implemented has a 16-bit address space with 16-bit words.
 
