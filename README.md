@@ -2,7 +2,7 @@
 
 The Single-Instruction-Set Computer (**SISC**) is a CPU and associated Von Neuman architecture that has only has only a single instruction: Subtract and Branch if Negative (**SBN**).
 
-ISC as implemented on Teensy has a 64-bit address space with 16-bit words.
+SISC as implemented on Teensy has a 16-bit address space with 16-bit words.
 
 Word bits are `0` through `15` inclusive, where bit `15` is the most-significant bit.
 
