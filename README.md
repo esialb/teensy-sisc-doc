@@ -12,7 +12,7 @@ Instruction format:
 
 ```
 SBN A, B, C
-	Subtract and Branch if Negative
+	**Subtract and Branch if Negative**
 	NEG = Mem[B] > Mem[A]
 	Mem[A] = Mem[A] - Mem[B]
 	If NEG
