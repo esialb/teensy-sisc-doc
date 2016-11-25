@@ -14,8 +14,10 @@ Instruction format:
 SBN A, B, C
 	Subtract and Branch if Negative
 	
-	NEG = Mem[B] > Mem[A]
-	Mem[A] = Mem[A] - Mem[B]
+	MA = Mem[A]
+	MB = Mem[B]
+	NEG = MB > MA
+	Mem[A] = MA - MB
 	If NEG
 		PC = C
 	Else
