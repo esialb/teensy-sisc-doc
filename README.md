@@ -38,7 +38,7 @@ All devices, including I/O devices, are memory-mapped to the negative address sp
 	## set deref2 to -ptr_addr
 		SBN deref2, deref2
 		SBN deref2, ptr_addr
-	## set deref+1 to -tmp0 (== ptr_addr)
+	## set deref+1 to -deref2 (== ptr_addr)
 	## note: this is self-modifying code
 		SBN (deref1+1), (deref1+1)
 		SBN (deref1+1), deref2
