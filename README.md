@@ -27,7 +27,7 @@ SBN A, B
 	This is interpreted as SBN A, B, (PC + 3)
 ```
 
-No registers are directly available to programs, however `PC` is memory-mapped to address `0xFFFF`.
+No registers are directly available to programs, however `PC` is memory-mapped to address `0xFFFF`.  When reading or writing to the memory-mapped `PC`, memory access is performed prior to branching.  Specifically, for non-negative subtractions, the value of `PC` as modified by the current instruction is used when computing `(PC+3)`.
 
 All devices, including I/O devices, are memory-mapped.
 
