@@ -24,7 +24,12 @@ SBN A, B, C
 SBN A, B
 	Subtract and Proceed
 
-	This is interpreted as SBN A, B, (PC + 3)
+	This is interpreted as SBN A, B, (PC + 3).
+
+	This version of the SBN instruction is only possible via intervention
+	of a linker, which substitutes the linked address of the next
+	instruction for the unsupplied C argument in each instance of this
+	instruction.
 ```
 
 No registers are directly available to programs, however `PC` is memory-mapped to address `0xFFFF`.  When reading or writing to the memory-mapped `PC`, memory access is performed prior to branching.  Specifically, for non-negative subtractions, the value of `PC` as modified by the current instruction is used when computing `(PC+3)`.
