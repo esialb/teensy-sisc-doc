@@ -16,20 +16,19 @@ SBN A, B
 	
 	Secondary format, interpreted as: `SBN A, B, $(PC+3)`
 
-## Sections
+## Directives
 
-### Section Types
+### Sections
 
+*	`.namespace <name>`
+	
+	Begins a namespace section.  This namespace is inherited by all .code and .data sections that follow, unless another .namespace directive is encountered. This section directive may occur any number of times.
 *	`.code [name (reloc|noreloc|export|noexport)*]`
 	
-	Begins a section containing SBN instructions.
+	Begins a section containing SBN instructions. This section directive may occur any number of times.
 *	`.data [name (reloc|noreloc|export|noexport)*]`
 	
 	Begins a section containing 16bit words as data included in the object file
-*	`.macro <name>\(arg_list\) \{ body \}`
-	
-	Defines an assembly language macro
-
 ### Section Modifiers
 
 *	`reloc` This section may be relocated
@@ -38,6 +37,13 @@ SBN A, B
 *	`noexport` This section is not exported as a symbol
 
 Default section modifiers: `noreloc`, `noexport`
+
+
+## Macros
+
+*	`.macro <name>\(arg_list\) \{ body \}`
+	
+	Defines an assembly language macro. This directive may occur any number of times.
 
 ## Inline math
 
