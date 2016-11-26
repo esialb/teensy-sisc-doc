@@ -38,6 +38,11 @@ No registers are directly available to programs, however `PC` is memory-mapped t
 
 All devices, including I/O devices, are memory-mapped.
 
+## Table of Contents
+
+*	[Memory-mapped hardware addresses](hardware.md)
+*	[Compiled object file format](object-file-format.md)
+
 ## Examples
 
 ### Dereferencing a pointer
