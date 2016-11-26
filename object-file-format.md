@@ -1,4 +1,4 @@
-# executable file format
+# object file format
 
 ## [file]
 
