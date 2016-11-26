@@ -1,4 +1,9 @@
-# write direct string to console
+# writing strings to serial console
+
+## write direct string to console
+*	`string_addr`
+	
+	Address of a zero-terminated string
 
 ```
 .macro WRITE_STRING(string_addr) {
@@ -23,10 +28,28 @@
 }
 ```
 
-# write indirect string to console
+## write indirect string to console
+
+*	`string_addr_ind`
+	
+	Address containing the address of a zero-terminated string
 
 ```
 .macro WRITE_STRING_INDIRECT(string_addr_ind) {
-
+	DEREFERENCE(string_addr_ind, write_string_d1)
+.code write_string_loop:
+	DEREFERENCE(write_string_d1, write_string_d2)
+	SBN HW_ZERO, write_string_d2, write_string_end
+	SBN write_string_d3, write_string_d3
+	SBN write_string_d3, write_string_d2
+	SBN HW_CONSOLE_W, write_string_d3
+	SBN HW_ZERO, HW_ONE, write_string_loop
+.data write_string_d1:
+	0
+.data write_string_d2:
+	0
+.data write_string_d3:
+	0
+.code write_string_end:
 }
 ```
