@@ -14,7 +14,7 @@ SBN A, B
 	Primary SBN instruction
 *	`SBN A, B`
 	
-	Secondary format, interpreted as: `SBN A, B, $($PC+3)`
+	Secondary format, interpreted as: `SBN A, B, $(PC+3)`
 
 ## Sections
 
