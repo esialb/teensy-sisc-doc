@@ -1,6 +1,6 @@
 # Memory Mapped Hardware Addresses
 
-*Write-only devices return zero when read*
+*Write-only devices return zero when read. Read-only devices perform no action when written.*
 
 Address | Type | Device | Read Behavior | Write Behavior
 -----|-----|-----|-----|-----
