@@ -20,13 +20,13 @@ SBN A, B
 
 ### Sections
 
-*	`.namespace <name>`
+*	`.namespace <name>:`
 	
 	Begins a namespace section.  This namespace is inherited by all .code and .data sections that follow, unless another .namespace directive is encountered. This section directive may occur any number of times.
-*	`.code [name (reloc|noreloc|export|noexport)*]`
+*	`.code [name (reloc|noreloc|export|noexport)*]:`
 	
 	Begins a section containing SBN instructions. This section directive may occur any number of times.
-*	`.data [name (reloc|noreloc|export|noexport)*]`
+*	`.data [name (reloc|noreloc|export|noexport)*]:`
 	
 	Begins a section containing 16bit words as data included in the object file
 ### Section Modifiers
