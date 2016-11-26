@@ -2,6 +2,10 @@
 
 The Single-Instruction-Set Computer (**SISC**) is a CPU and associated Von Neuman architecture that has only has only a single instruction: Subtract and Branch if Negative (**SBN**). SISC is a turing-complete architecture, although it relies heavily on self-modifying code to achieve common operations such as dereferencing a pointer.
 
+This SISC VM is implemented for use on a [Teensy 3.5](https://www.adafruit.com/product/3266) microcontroller, with dual OLED displays over i2c.
+
+![breadboard](img/breadboard.jpg)
+
 SISC as implemented has a 16-bit address space with 16-bit words.
 
 Word bits are `0` through `15` inclusive, where bit `15` is the most-significant bit.
