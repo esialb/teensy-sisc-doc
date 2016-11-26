@@ -26,7 +26,7 @@ SBN A, B, C
 SBN A, B
 	Subtract and Proceed
 
-	This is interpreted as SBN A, B, (PC + 3).
+	This is interpreted as: SBN A, B, $($PC + 3)
 
 	This version of the SBN instruction is only possible via intervention
 	of a linker, which substitutes the linked address of the next
