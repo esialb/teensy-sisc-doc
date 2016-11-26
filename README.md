@@ -45,7 +45,7 @@ All devices, including I/O devices, are memory-mapped.
 *	[Assembly language format](assembly-language-format.md)
 *	[List of examples](example)
 
-## Examples
+## Noteworthy Examples
 
 *	[Dereference a pointer](example/dereference-pointer.md)
 *	[Write zero-terminated string to serial console](example/write-string-to-console.md)
