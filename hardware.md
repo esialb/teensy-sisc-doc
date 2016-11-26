@@ -1,9 +1,12 @@
 # Memory Mapped Hardware Addresses
 
-Address | Device | Read Behavior | Write Behavior
------|-----|-----|-----
-`0xFFFF` | CPU PC register | return program counter of current instruction | set program counter of current instruction 
-`0xFEFF` | serial console, write-only | ignored (returns zero) | writes bottom 8 bits to console
-`0xFEFE` | serial console, read-only | returns bottom 8 bits buffered from console | ignored
+*Write-only devices return zero when read*
 
+Address | Type | Device | Read Behavior | Write Behavior
+-----|-----|-----|-----|-----
+`0xFFFF` | RW | CPU PC register | return program counter of current instruction | set program counter of current instruction 
+`0xFEFF` | W | serial console (write) | | writes bottom 8 bits to serial console
+`0xFEFE` | R | serial console  (read)| returns bottom 8 bits buffered from console | 
+`0xFDFF` | W | OLED console | | writes bottom 8 bits to OLED console
+ 
 
