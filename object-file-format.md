@@ -35,12 +35,9 @@ An object file is composed of 16-bit or 32-bit words, or UTF16 encoded strings. 
 ```
 
 ## [header_type]
-*	`0x0000`: Linker Namespace
+*	`0x0001`: Required Linker Symbol
 	
-	Name of the linker namespace, UTF16 encoded string. May occur only once.
-*	`0x0001`: Required Linker Namespace
-	
-	Name of a required linker namespace, UTF16 encoded string. Occurs once for each required linker namespace.
+	Namespace and name of a required linker symbol, UTF16 encoded string. Occurs once for each required linker symbol. Namespace and name are both null-terminated, with namespace prepended to name.
 *	`0x0002`: Exported Linker Symbol
-	
-	Name of an exported linker symbol for this namespace, UTF16 encoded string.  Occurs once for each exported symbol.
+
+	Namespace and name of an exported linker symbol, UTF16 encoded string.  Occurs once for each exported symbol. Namespace and name are both null-terminated, with namespace prepended to name.
