@@ -42,6 +42,7 @@ All devices, including I/O devices, are memory-mapped.
 
 *	[Memory-mapped hardware addresses](hardware.md)
 *	[Compiled object file format](object-file-format.md)
+*	[Assembly language format](assembly-language-format.md)
 
 ## Examples
 
