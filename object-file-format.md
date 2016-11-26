@@ -1,5 +1,13 @@
 # object file format
 
+An object file is composed of 16-bit or 32-bit words, or UTF16 encoded strings.  Words may be signed or unsigned.
+
+*	`uint16`: unsigned 16-bit word
+*	`sint16`: signed 16-bit word
+*	`uint32`: unsigned 32-bit word
+*	`sint32`: signed 32-bit word
+*	`string`: UTF16 encoded string
+
 ## [file]
 
 ```
