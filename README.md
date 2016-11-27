@@ -44,6 +44,7 @@ All devices, including I/O devices, are memory-mapped.
 
 ## Table of Contents
 
+*	[Hardware configuration](teensy-hardware.md)
 *	[Memory-mapped hardware addresses](hardware.md)
 *	[Compiled object file format](object-file-format.md)
 *	[Assembly language format](assembly-language-format.md)
