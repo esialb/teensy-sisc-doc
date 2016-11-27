@@ -6,6 +6,8 @@ This SISC VM is implemented for use on a [Teensy 3.6](https://www.adafruit.com/p
 
 ![breadboard](img/breadboard.jpg)
 
+## Specifications
+
 SISC as implemented has a 16-bit address space with 16-bit words.
 
 Word bits are `0` through `15` inclusive, where bit `15` is the most-significant bit.
@@ -42,7 +44,7 @@ No registers are directly available to programs, however `PC` is memory-mapped t
 
 All devices, including I/O devices, are memory-mapped.
 
-## Table of Contents
+## List of Specification Documents
 
 *	[Hardware configuration](teensy-hardware.md)
 *	[Memory-mapped hardware addresses](hardware.md)
@@ -50,7 +52,7 @@ All devices, including I/O devices, are memory-mapped.
 *	[Assembly language format](assembly-language-format.md)
 *	[List of examples](example)
 
-## Noteworthy Examples
+## Noteworthy SBN Examples
 
 *	[Dereference a pointer](example/dereference-pointer.md)
 *	[Write zero-terminated string to serial console](example/write-string-to-console.md)
